@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+
+*{
+    outline: none;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    user-zoom: none;
+}
+
+
+
+
+@layer base{
+    body{
+        @apply text-[#242525] tracking-widest bg-gradient-to-r from-[#0fe2bf] to-[#2e70a7]
+    }
+
+    h1, h2, h3, h4, h5, h6{
+        @apply font-bold
+    }
+
+    h1{
+        @apply text-4xl sm:text-5xl md:text-6xl
+    }
+
+    h2{
+        @apply text-3xl sm:text-4xl
+    }
+
+    /* nav{
+        @apply z-[500]
+    } */
+
+    li{
+        @apply cursor-pointer
+    }
+
+    /* button{
+        @apply rounded-xl uppercase bg-gradient-to-r from-[#05afaf] to-[#1684df] text-white 
+    } */
+}
+
+
+/* nav{
+    z-index: 99999;
+} */
+
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* transition: all 20s ease-in-out; */
+    /* background-image: url(projects/banner-12.jpg); */
+    /* animation: imageAnimate 2s alternate-reverse ease-in-out ; */
+}
+
+@keyframes imageAnimate {
+    0%{
+        background-image: url(projects/banner-15.jpg);
+    }
+    100%{
+        background-image: url(projects/banner-12.jpg);
+    }
+}
+
+::-webkit-scrollbar{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 200px;
+}
+
+.popup{
+    animation: popUp .8s forwards ease-in-out;
+}
+
+
+@keyframes popUp {
+    0%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(-1px);
+        transform: translateY(10px);
+    }
+}
+
+
+.popout{
+    animation: popOut .5s forwards ease-in-out;
+}
+
+@keyframes popOut {
+    0%{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+}
+
