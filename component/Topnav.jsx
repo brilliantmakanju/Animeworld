@@ -32,16 +32,18 @@ const Topnav = () => {
 
                 </ul>
             </nav>
-            <nav className=" md:hidden px-2 py-3 flex flex-row justify-between items-center shadow-md shadow-[#3d6592] text-white bg-transparent ">
-                <div className="flex flex-row items-center gap-3 ">
-                    <div> <AiOutlineMenu size={35} onClick={() => handleMobile()} /></div>
-                    <div>
-                        <h2 className=" font-serif " >AnimeWorld</h2>
+            <nav className=" md:hidden">
+                <div className=" md:hidden px-2 py-3 flex flex-row justify-between items-center shadow-md shadow-[#3d6592] text-white bg-transparent " >
+                    <div className="flex flex-row items-center gap-3 ">
+                        <div> <AiOutlineMenu size={35} onClick={() => handleMobile()} /></div>
+                        <div>
+                            <h2 className=" font-serif " >Anime Castle</h2>
+                        </div>
                     </div>
-                </div>
-                <div className="flex flex-row items-center gap-4 ">
-                    <div>S</div>
-                    <div>P</div>
+                    <div className="flex flex-row items-center gap-4 ">
+                        <div>S</div>
+                        <div>P</div>
+                    </div>
                 </div>
                 <div className={` z-[13]  ${mobile ? ' md:hidden fixed left-0 top-0 w-full h-screen bg-[#141313b2] ' : ' z-[13] '}  `}>
                     <div className={mobile ? 'fixed  left-0 top-0 w-[85%] sm:w-[60%] md:w-[45%] h-screen bg-gradient-to-bl from-[#3a94dd] to-[#06cfae] p-10 ease-in duration-500  ' : ' fixed left-[-100%] top-0 w-895%] sm:w-[60%] md:w-[45%] h-screen bg-gradient-to-bl from-[#3a94dd] to-[#06cfae] p-10 ease-in duration-300  '}>
