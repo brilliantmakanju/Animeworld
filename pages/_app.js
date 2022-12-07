@@ -5,6 +5,7 @@ import Router from "next/router";
 import dynamic from "next/dynamic";
 import Nav from "../component/Nav";
 import Sidenav from "../component/Sidenav";
+import Topnav from "../component/Topnav";
 
 // const Nav = dynamic(() => import("../component/Nav"));
 
@@ -19,6 +20,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Sidenav />
+      <Topnav />
       <Component {...pageProps}></Component>
     </>
   )
