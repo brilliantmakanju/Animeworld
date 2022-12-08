@@ -64,6 +64,17 @@ const Topnav = () => {
                                             Home
                                         </li>
                                     </Link>
+                                    <Link
+                                        href='login'
+                                        prefetch={false}
+                                        onClick={(() => setMobile(false))}
+                                    >
+                                        <li
+                                            className='p-4 text-small'
+                                        >
+                                            Login
+                                        </li>
+                                    </Link>
                                 </ul>
                             </div>
                         </div>
