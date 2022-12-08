@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React, { useState } from 'react'
 import { RiBracketsLine } from 'react-icons/ri'
 
@@ -14,11 +15,13 @@ const Sidenav = () => {
     <div className={`overflow-y-scroll bg-[#2875b4] overflow-x-hidden md:flex fixed tracking-widest shadow-2xl shadow-gray-900 top-4 h-[95%] left-4 rounded-2xl ${open ? "p-0" : "p-6"} w-[17%] scrollbar scrollbar-track-[#2e92b1] scrollbar-thumb-[#42d3c7d8] rounded-r-none hidden`}>
       <div className=' absolute ' >
         <h2 className={` ${open ? "p-8 pb-0" : "p-0"} font-bold text-[25px] text-left `} >
-          AnimeWorld!
+          Anime Castle
         </h2>
 
         <ul className={`mt-10  p-1 tracking-widest font-bold`}>
-          <li className=' flex justify-start p-2 mb-2 rounded-lg hover:bg-[#25ceb2] hover:rounded-lg hover:shadow-md hover:shadow-gray-900 ease-in-out duration-300 ' ><span className='mr-2'>Ar</span> Home</li>
+          <Link href="/" prefetch={false} >
+            <li className=' flex justify-start p-2 mb-2 rounded-lg hover:bg-[#25ceb2] hover:rounded-lg hover:shadow-md hover:shadow-gray-900 ease-in-out duration-300 ' ><span className='mr-2'>Ar</span> Home</li>
+          </Link>
           <li className=' flex justify-start p-2 mb-2 hover:bg-[#25ceb2] hover:rounded-lg hover:shadow-md hover:shadow-gray-900 ease-in-out duration-300 ' ><span className='mr-2'>Ar</span> Libary</li>
           <li className=' flex justify-start p-2 mb-2 hover:bg-[#25ceb2] hover:rounded-lg hover:shadow-md hover:shadow-gray-900 ease-in-out duration-300' onClick={(() => openDrop())} ><span className='mr-2' >Ar</span> Explore</li>
           <li className=' flex justify-start p-2 mb-2 hover:bg-[#25ceb2] hover:rounded-lg hover:shadow-md hover:shadow-gray-900 ease-in-out duration-300' ><span className='mr-2'>Ar</span> History</li>

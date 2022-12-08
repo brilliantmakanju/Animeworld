@@ -23,12 +23,9 @@ const Topnav = () => {
                 </div>
 
                 <ul className='flex justify-center items-center gap-4  ' >
-                    <li className='font-bold  border-[1px] p-2 rounded-md ' >Login</li>
-                    <li className='font-bold  border-[1px] p-2 rounded-md ' >Login</li>
-                    <li className='font-bold  border-[1px] p-2 rounded-md ' >Login</li>
-                    <li className='font-bold  border-[1px] p-2 rounded-md ' >Login</li>
-                    <li className='font-bold  border-[1px] p-2 rounded-md ' >Login</li>
-                    <li className='font-bold  border-[1px] p-2 rounded-md ' >Login</li>
+                    <Link href="/login" prefetch={false} >
+                        <li className='font-bold  border-[1px] p-2 rounded-md ' >Login</li>
+                    </Link>
 
                 </ul>
             </nav>
@@ -57,7 +54,7 @@ const Topnav = () => {
                             <div className='py-4 flex flex-col'>
                                 <ul className='uppercase'>
                                     <Link
-                                        href='/#intro'
+                                        href='/'
                                         prefetch={false}
                                         onClick={(() => setMobile(false))}
                                     >
@@ -65,50 +62,6 @@ const Topnav = () => {
                                             className='p-4 text-small'
                                         >
                                             Home
-                                        </li>
-                                    </Link>
-                                    <Link
-                                        href='/#about'
-                                        prefetch={false}
-                                        onClick={(() => setMobile(false))}
-                                    >
-                                        <li
-                                            className='p-4 text-small'
-                                        >
-                                            About
-                                        </li>
-                                    </Link>
-                                    <Link
-                                        href='/#skills'
-                                        prefetch={false}
-                                        onClick={(() => setMobile(false))}
-                                    >
-                                        <li
-                                            className='p-4 text-small'
-                                        >
-                                            Skills
-                                        </li>
-                                    </Link>
-                                    <Link
-                                        href='/#projects'
-                                        prefetch={false}
-                                        onClick={(() => setMobile(false))}
-                                    >
-                                        <li
-                                            className='p-4 text-small'
-                                        >
-                                            Projects
-                                        </li>
-                                    </Link>
-                                    <Link
-                                        href='/#contact'
-                                        prefetch={false}
-                                        onClick={(() => setMobile(false))}
-                                    >
-                                        <li
-                                            className='p-4 text-small'
-                                        >
-                                            Contact
                                         </li>
                                     </Link>
                                 </ul>
