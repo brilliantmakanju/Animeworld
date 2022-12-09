@@ -23,8 +23,11 @@ const Topnav = () => {
                 </div>
 
                 <ul className='flex justify-center items-center gap-4  ' >
-                    <Link href="/login" prefetch={false} >
+                    <Link href="login" prefetch={false} >
                         <li className='font-bold  border-[1px] p-2 rounded-md ' >Login</li>
+                    </Link>
+                    <Link href="register" prefetch={false} >
+                        <li className='font-bold  border-[1px] p-2 rounded-md ' >Register</li>
                     </Link>
 
                 </ul>
@@ -73,6 +76,17 @@ const Topnav = () => {
                                             className='p-4 text-small'
                                         >
                                             Login
+                                        </li>
+                                    </Link>
+                                    <Link
+                                        href='register'
+                                        prefetch={false}
+                                        onClick={(() => setMobile(false))}
+                                    >
+                                        <li
+                                            className='p-4 text-small'
+                                        >
+                                            Register
                                         </li>
                                     </Link>
                                 </ul>

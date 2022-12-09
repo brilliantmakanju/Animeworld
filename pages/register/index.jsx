@@ -1,13 +1,14 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import React from 'react'
 import { FaApple, FaFacebook, FaGoogle } from 'react-icons/fa'
 
-const Login = () => {
+const Register = () => {
     return (
         <>
             <Head>
-                <title>Login</title>
-                <meta name="description" content="Anime Castle Login for users" />
+                <title>Register</title>
+                <meta name="description" content="Anime Castle Signup Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className='md:float-left rounded-lg md:w-[68em] w-full flex justify-center items-center md:h-screen h-[90vh] flex-col gap-0  p-9 md:px-[350px] md:ml-[16rem] md:mt-[-50px]   ' >
@@ -33,17 +34,16 @@ const Login = () => {
                 <form className=' w-full flex   rounded-xl flex-col  gap-3 ' >
                     <input type="email" className='h-[50px] text-[18px] font-bold  pl-2 rounded-sm ' required placeholder='Email' />
                     <input type="password" className='h-[50px] text-[18px] font-bold  pl-2 rounded-sm ' required placeholder='Password' />
-                    <div className='flex my-[10px] gap-2 justify-center items-center w-full ' >
+                    {/* <div className='flex my-[10px] gap-2 justify-center items-center w-full ' >
                         <input className='w-[25px] rounded h-[25px] ' type="checkbox" />
                         <span className='w-full  text-[15px]  ' >Keep me signed in until i sign out</span>
-                    </div>
-                    <button className='bg-[#0abdbdd5]  hover:shadow-md hover:shadow-[#2f313a] duration-500 ease-in-out  p-[10px] rounded-md  ' >Login</button>
-                    <a className='my-[14px] md:my-[1px] md:mb-[15px] mb-[20px]  text-[#18526d] font-bold  ' >Forgot Password?</a>
+                    </div> */}
+                    <button className='bg-[#0abdbdd5]  hover:shadow-md hover:shadow-[#2f313a] duration-500 ease-in-out  p-[10px] rounded-md  ' >Register</button>
                 </form>
-                <div className='flex justify-center items-center ' >Not a member yet?  <a className=' mx-2 text-[#18526d] font-bold ' >Sign Up.</a> </div>
+                <div className='my-[14px] md:my-[1px] md:mb-[15px] mb-[20px] flex justify-center items-center ' >Already a member?  <Link href="login" className=' mx-2 text-[#18526d] font-bold ' >Login.</Link> </div>
             </main>
         </>
     )
 }
 
-export default Login
+export default Register
