@@ -1,6 +1,6 @@
+import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import React from 'react'
 import { FaApple, FaFacebook, FaGoogle } from 'react-icons/fa'
 
 const Register = () => {
@@ -11,7 +11,7 @@ const Register = () => {
                 <meta name="description" content="Anime Castle Signup Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className='md:float-left rounded-lg md:w-[68em] w-full flex justify-center items-center md:h-screen h-[90vh] flex-col gap-0  p-9 md:px-[350px] md:ml-[16rem] md:mt-[-50px]   ' >
+            <main className='  md:float-left rounded-lg md:w-[68em] w-full md:h-screen h-[90vh] flex-col gap-0  p-9 md:px-[350px] md:ml-[16rem] md:mt-[-40px] mt-[10vh]   ' >
                 <div className=' w-full flex flex-col flex-wrap gap-3 '  >
                     <div className='flex border-[2px] py-1 rounded-md px-3 justify-between items-center ' >
                         <FaFacebook className='w-[20px] h-[40px] text-[blue] ' />
@@ -31,9 +31,11 @@ const Register = () => {
                     <span className=' font-bold mt-[5px] ' >or</span>
                     <div className='w-[50%] bg-black h-[1px] ' ></div>
                 </div>
-                <form className=' w-full flex   rounded-xl flex-col  gap-3 ' >
-                    <input type="email" className='h-[50px] text-[18px] font-bold  pl-2 rounded-sm ' required placeholder='Email' />
-                    <input type="password" className='h-[50px] text-[18px] font-bold  pl-2 rounded-sm ' required placeholder='Password' />
+                <form className=' w-full flex flex-col  rounded-xl  gap-3 ' >
+                    <input type="email" spellCheck="false" className='h-[50px] text-[18px] font-bold  pl-2 rounded-sm ' required placeholder='Email' />
+                    <input type="text" spellCheck="false" className='h-[50px] text-[18px] font-bold  pl-2 rounded-sm ' required placeholder='Username' />
+                    <input type="password" spellCheck="false" className='h-[50px] text-[18px] font-bold  pl-2 rounded-sm ' required placeholder='Password' />
+                    <input type="password" spellCheck="false" className='h-[50px] text-[18px] font-bold  pl-2 rounded-sm ' required placeholder='Confirm Password' />
                     {/* <div className='flex my-[10px] gap-2 justify-center items-center w-full ' >
                         <input className='w-[25px] rounded h-[25px] ' type="checkbox" />
                         <span className='w-full  text-[15px]  ' >Keep me signed in until i sign out</span>

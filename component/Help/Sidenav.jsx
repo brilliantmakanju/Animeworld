@@ -12,7 +12,7 @@ const Sidenav = () => {
   }
 
   return (
-    <div className={`overflow-y-scroll bg-[#2875b4] overflow-x-hidden md:flex fixed tracking-widest shadow-2xl shadow-gray-900 top-4 h-[95%] left-4 rounded-2xl ${open ? "p-0" : "p-6"} w-[17%] scrollbar scrollbar-track-[#2e92b1] scrollbar-thumb-[#42d3c7d8] rounded-r-none hidden`}>
+    <div className={`overflow-y-scroll bg-[#2875b4] overflow-x-hidden md:flex fixed tracking-widest shadow-2xl shadow-gray-900 top-4 h-[95%] left-4 rounded-2xl ${open ? "p-0" : "p-6"} w-[27%] scrollbar scrollbar-track-[#2e92b1] scrollbar-thumb-[#42d3c7d8] rounded-r-none hidden`}>
       <div className=' absolute ' >
         <h2 className={` ${open ? "p-8 pb-0" : "p-0"} font-bold text-[25px] text-left `} >
           Anime Castle

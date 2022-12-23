@@ -3,9 +3,9 @@ import "nprogress/nprogress.css";
 import NProgress from "nprogress";
 import Router from "next/router";
 import dynamic from "next/dynamic";
-import Nav from "../component/Nav";
-import Sidenav from "../component/Sidenav";
-import Topnav from "../component/Topnav";
+import SNav from "../component/Unauth/Nav/SNav";
+import TNav from "../component/Unauth/Nav/TNav";
+import RSide from "../component/Unauth/Nav/RSide";
 
 // const Nav = dynamic(() => import("../component/Nav"));
 
@@ -18,10 +18,25 @@ Router.events.on("routeChangeError", () => NProgress.done());
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <Sidenav />
-      <Topnav />
-      <Component {...pageProps}></Component>
-    </>
+    <div className=" flex md:flex-row md:justify-between  " >
+      <SNav />
+      <div className="w-full  text-[#9FD8CB] overflow-x-hidden overflow-y-scroll h-screen flex flex-col md:px-5 px-1 ">
+        {/* <TNav /> */}
+        <div className=" flex justify-between items-center py-5  " >
+          <div className="flex font-extrabold flex-row items-center justify-start md:gap-10 gap-5 " >
+            <p>Movie</p>
+            <p>Series</p>
+            <p>Tv Show</p>
+          </div>
+          <div className="flex md:hidden font-extrabold flex-row items-center justify-start md:gap-10 gap-5" >
+            <p>S</p>
+            <p>P</p>
+            <p>H</p>
+          </div>
+        </div>
+        <Component {...pageProps}></Component>
+      </div>
+      <RSide />
+    </div>
   )
 }

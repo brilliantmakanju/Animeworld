@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 const AnimeBanner = () => {
   return (
     <motion.div
-      className="relative w-full md:w-[98%] md:h-[300px] h-[34vh] rounded-xl shadow-lg shadow-gray-900 bg-red-400  "
+      className="relative w-full md:w-[98%] md:h-[300px] h-[15em] rounded-xl shadow-lg shadow-gray-900 bg-red-400  "
       initial={{ x: "-100vw" }}
       animate={{ x: 0}}
       transition={{type:"spring", duration:1, bounce:0.3}}

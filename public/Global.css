@@ -18,11 +18,11 @@ html{
 
 @layer base{
     body{
-        @apply text-[#242525] tracking-widest bg-gradient-to-r from-[#0fe2bf] to-[#2e70a7]
+        @apply  tracking-widest bg-[#ffffff] text-[#0D1B2A]
     }
 
     h1, h2, h3, h4, h5, h6{
-        @apply font-bold
+        @apply font-bold text-[#0D1B2A]
     }
 
     h1{
@@ -44,20 +44,25 @@ html{
     /* button{
         @apply rounded-xl uppercase bg-gradient-to-r from-[#05afaf] to-[#1684df] text-white 
     } */
+
+    p, span, div{
+        @apply text-[#0D1B2A]
+    }
 }
 
-
-/* nav{
-    z-index: 99999;
-} */
 
 body{
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
     /* transition: all 20s ease-in-out; */
     /* background-image: url(projects/banner-12.jpg); */
     /* animation: imageAnimate 2s alternate-reverse ease-in-out ; */
+}
+
+.animeSite{
+    color: rgb(23, 44, 102);
 }
 
 @keyframes imageAnimate {
@@ -70,11 +75,13 @@ body{
 }
 
 ::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgb(216, 205, 205);
     scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar-thumb{
-    border-radius: 200px;
+    background: #004BA8;
 }
 
 .popup{
