@@ -76,13 +76,33 @@ body{
 
 ::-webkit-scrollbar{
     width: 5px;
-    background-color: rgb(216, 205, 205);
+    height: 10px;
     scroll-behavior: smooth;
+    background-color: rgb(216, 205, 205);
 }
 
 ::-webkit-scrollbar-thumb{
     background: #004BA8;
 }
+
+.bannerSlide::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+/* #bannerScroll div{
+    animation: slides 40s linear infinite;
+    animation-delay: 60s;
+}
+
+@keyframes slides {
+    0%{
+        transform: translate3d(0, 0, 0);
+    }
+    100%{
+        transform: translate3d(0, -1000px, 0);
+    }
+} */
 
 .popup{
     animation: popUp .8s forwards ease-in-out;

@@ -37,7 +37,7 @@ const Login = () => {
                 <meta name="description" content="Anime Castle Login for users" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className=' rounded-lg md:w-full w-full flex justify-center items-center md:h-screen h-full flex-col gap-0  p-9 md:px-[350px] md:ml-[16rem] md:mt-[-50px]   ' >
+            <main className=' rounded-lg md:w-full w-full flex justify-center items-center md:h-screen h-full flex-col gap-0  p-9 px-5 md:px-10 m-auto  ' >
                 <div className=' w-full flex flex-col flex-wrap gap-3 '  >
                     <div className='flex border-[2px] py-1 rounded-md px-3 justify-between items-center ' >
                         <FaFacebook className='w-[20px] h-[40px] text-[blue] ' />
