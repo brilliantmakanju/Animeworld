@@ -2,9 +2,9 @@ import React from 'react'
 
 const SNav = () => {
     return (
-        <nav className=' w-[28%] px-5 py-5 pr-5 sticky h-screen overflow-x-hidden overflow-y-scroll  md:flex md:flex-col hidden scrollbar-[3px] scrollbar-track-transparent  ' >
+        <nav className=' w-[380px] pl-3 py-5 pr-5 sticky h-screen overflow-x-hidden overflow-y-scroll  md:flex md:flex-col hidden scrollbar-[3px] scrollbar-track-transparent  ' >
             <div className='animeSite' >
-                <h2 className='text-[20.5px]  ' >
+                <h2 className='md:text-[19px]  ' >
                     Anime Vanguard
                 </h2>
             </div>

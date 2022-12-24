@@ -45,7 +45,7 @@ const Banner = () => {
             <motion.div
                 // id='slideCont'
                 id='carouselDarkVariant'
-                className="carousel slide carousel-fade carousel-dark  relative h-auto md:h-auto w-full flex flex-row justify-around items-center   gap-10 overflow-scroll bannerSlide  "
+                className="carousel slide carousel-fade carousel-dark  relative h-auto md:h-auto w-[97vw] flex flex-row justify-around md:w-full items-center   gap-10 overflow-scroll bannerSlide  "
                 data-bs-ride="carousel"
                 initial={{ x: "-100vw" }}
                 animate={{ x: 0 }}
@@ -61,13 +61,13 @@ const Banner = () => {
                             className="absolute rounded-md object-fit"
                             alt='Slide'
                         />
-                        <div className="z-[11] absolute bottom-2 md:bottom-10 grid grid-cols-1 py-5 px-6 w-full md:w-[50%] pl-3 justify-start items-start md:left-0 font-extrabold  text-white ">
+                        <div className="z-[11] absolute bottom-2 md:bottom-10 grid grid-cols-1 py-5 px-6 w-full md:w-full pl-3 justify-start items-start md:left-0 font-extrabold  text-white ">
                             <h5 className='text-[#d8d6d6]' >Top Rated {' > '} </h5>
                             <h5 className='  text-[25px] text-white tracking-tighter py-0 ' >Hunter X Hunter</h5>
                             <h5 className='text-[#c9baba] font-extrabold tracking-widest  ' >Action, Fantasy</h5>
-                            <div className='flex w-[70%] gap-5 font-extrabold flex-row justify-start items-center ' >
-                                <button className='w-[80%] p-2 bg-[#047e9c] rounded-sm ' >Watch Now</button>
-                                <button className='w-[20%] p-2 border-2 text-white border-white bg-[#615c5c3f] text-[15px] rounded-sm ' >+</button>
+                            <div className='flex w-auto gap-5 font-extrabold flex-row justify-start items-center ' >
+                                <button className='md:w-[35%] w-[50%] p-2 bg-[#047e9c] rounded-sm ' >Watch Now</button>
+                                <button className='md:w-[10%] w-[15%] p-2 border-2 text-white border-white bg-[#615c5c3f] text-[15px] rounded-sm ' >+</button>
                             </div>
                         </div>
                     </div>
