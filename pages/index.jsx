@@ -4,7 +4,8 @@ import dynamic from "next/dynamic";
 // const Intro = dynamic(() => import("../component/Intro"))
 import { useEffect, useState } from "react";
 import { AiOutlineMenu } from 'react-icons/ai'
-import Banner from "../component/Common/Banner";
+import Banner from "../component/Common/unauth/Banner";
+import Anime from "../component/Unauth/Home/Anime";
 
 export default function Home() {
 
@@ -29,77 +30,11 @@ export default function Home() {
         <meta name="description" content="Movie Ap using Nextjs And Django" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="  ">
+      <main className=" flex flex-col gap-1  ">
         <Banner />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
-        <h1>
-          Top Nav
-        </h1><br />
+
+        <Anime />
+        
       </main>
     </div>
   );

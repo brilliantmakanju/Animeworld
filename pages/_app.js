@@ -22,11 +22,14 @@ export default function MyApp({ Component, pageProps }) {
       <SNav />
       <div className="w-full  text-[#9FD8CB] overflow-x-hidden overflow-y-scroll h-screen flex flex-col md:px-5 px-1 ">
         {/* <TNav /> */}
-        <div className=" flex justify-between items-center py-5  " >
-          <div className="flex font-extrabold flex-row items-center justify-start md:gap-10 gap-5 " >
+        <div className=" flex justify-between items-center py-2 px-2  " >
+          <div className="md:flex hidden font-extrabold flex-row items-center justify-start md:gap-10 gap-5 " >
             <p>Movie</p>
             <p>Series</p>
             <p>Tv Show</p>
+          </div>
+          <div className="md:hidden" >
+            <h2 className="text-[20px]" >Anime Vanguard</h2>
           </div>
           <div className="flex md:hidden font-extrabold flex-row items-center justify-start md:gap-10 gap-5" >
             <p>S</p>

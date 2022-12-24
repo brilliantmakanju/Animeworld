@@ -45,15 +45,15 @@ const Banner = () => {
             <motion.div
                 // id='slideCont'
                 id='carouselDarkVariant'
-                className="carousel slide carousel-fade carousel-dark  relative h-auto md:h-auto w-full flex flex-row justify-around items-center bg-red-400  gap-10 overflow-scroll bannerSlide  "
+                className="carousel slide carousel-fade carousel-dark  relative h-auto md:h-auto w-full flex flex-row justify-around items-center   gap-10 overflow-scroll bannerSlide  "
                 data-bs-ride="carousel"
                 initial={{ x: "-100vw" }}
                 animate={{ x: 0 }}
                 transition={{ type: "spring", duration: 1, bounce: 0.3 }}
             >
 
-                <div className="carousel-inner bannerSlide h-[30vh] md:h-[50vh] relative w-screen overflow-x-scroll overflow-y-scroll " id='bannerScroll' style={{scrollBehavior:"smooth"}} >
-                    <div className="carousel-item active relative float-left h-[40vh] md:h-[50vh]  w-full " >
+                <div className="carousel-inner bannerSlide h-[40vh] md:h-[55vh] relative w-screen overflow-x-scroll overflow-y-scroll " id='bannerScroll' style={{scrollBehavior:"smooth"}} >
+                    <div className="carousel-item active relative float-left h-[40vh] md:h-[55vh]  w-full " >
                         <Image
                             fill
                             src="/projects/banner-11.jpg"
@@ -65,7 +65,7 @@ const Banner = () => {
                         </div>
                     </div>
                     
-                    <div className="carousel-item active relative float-left h-[40vh] md:h-[50vh]  w-full " >
+                    <div className="carousel-item active relative float-left h-[40vh] md:h-[55vh]  w-full " >
                         <Image
                             fill
                             src="/projects/banner-18.jpg"
@@ -77,7 +77,7 @@ const Banner = () => {
                         </div>
                     </div>
 
-                    <div className="carousel-item active relative float-left h-[40vh] md:h-[50vh]  w-full " >
+                    <div className="carousel-item active relative float-left h-[40vh] md:h-[55vh]  w-full " >
                         <Image
                             fill
                             src="/projects/banner-10.jpg"
@@ -89,7 +89,7 @@ const Banner = () => {
                         </div>
                     </div>
 
-                    <div className="carousel-item active relative float-left h-[30vh] md:h-[50vh]  w-full " >
+                    <div className="carousel-item active relative float-left h-[40vh] md:h-[55vh]  w-full " >
                         <Image
                             fill
                             src="/projects/banner-12.jpg"
@@ -100,7 +100,6 @@ const Banner = () => {
                             <h5 className='text-xl' >3 Slide</h5>
                         </div>
                     </div>
-
                 </div>
 
 
