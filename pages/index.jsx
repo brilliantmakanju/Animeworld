@@ -30,7 +30,7 @@ export default function Home() {
         <meta name="description" content="Movie Ap using Nextjs And Django" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" flex flex-col gap-1  ">
+      <main className=" flex flex-col gap-1 px-3  ">
         <Banner />
 
         <Anime />
