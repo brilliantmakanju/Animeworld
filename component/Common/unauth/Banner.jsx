@@ -45,7 +45,7 @@ const Banner = () => {
             <motion.div
                 // id='slideCont'
                 id='carouselDarkVariant'
-                className="carousel slide carousel-fade carousel-dark  relative h-[50vh] md:h-[70vh] w-[97vw] flex flex-row justify-around md:w-[85vw] items-center   gap-10 overflow-scroll bannerSlide  "
+                className="carousel pl-2 slide carousel-fade carousel-dark  relative h-[50vh] md:h-[70vh] w-[97vw] flex flex-row justify-around md:w-[85vw] items-center   gap-10 overflow-scroll bannerSlide  "
                 data-bs-ride="carousel"
                 initial={{ x: "-100vw" }}
                 animate={{ x: 0 }}
