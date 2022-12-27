@@ -11,7 +11,7 @@ const CAnime = () => {
                     src="/projects/banner-5.jpg"
                     className="absolute object-fill"
                 />
-                <button className='absolute w-[90%] bottom-3 left-2 p-3 bg-white text-black ' >Watch Now</button>
+                <button className='absolute rounded-full h-[50px] w-[50px] bottom-3 right-1  bg-[orange] text-black ' >{">"}</button>
 
                 {/* Use thise for Authorized user */}
                 <button className='absolute  top-3 right-2 p-2 px-4 font-extrabold text-[20px] rounded-sm bg-[#968d8da2]  text-white '  >+</button>

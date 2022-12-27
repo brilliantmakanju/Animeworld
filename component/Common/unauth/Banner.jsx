@@ -53,7 +53,7 @@ const Banner = () => {
             >
 
                 <div className="carousel-inner bannerSlide h-[50vh] md:h-[70vh] relative w-[97vw] overflow-x-scroll overflow-y-scroll " id='bannerScroll' style={{ scrollBehavior: "smooth" }} >
-                    <div className='absolute left-0 w-full h-full rounded-l-md z-[10] bg-gradient-to-r from-[#0f0e0ed0] to-[#08080852] ' ></div>
+                    <div className='absolute left-0 w-full  h-full rounded-l-md z-[10] bg-gradient-to-r from-[#0f0e0e75] to-[#08080800] ' ></div>
                     <div className="carousel-item active relative float-left h-[50vh] md:h-[70vh]  w-full " >
                         <Image
                             fill
@@ -63,11 +63,11 @@ const Banner = () => {
                         />
                         <div className="z-[11] absolute bottom-2 md:bottom-10 grid grid-cols-1 py-5 px-6 w-full md:w-full pl-3 justify-start items-start md:left-0 font-extrabold  text-white ">
                             <h5 className='text-[#d8d6d6]' >Top Rated {' > '} </h5>
-                            <h5 className='  text-[25px] text-white tracking-tighter py-0 ' >Hunter X Hunter</h5>
+                            <h3 className='  text-[30px] text-white tracking-tighter py-0 ' >Hunter X Hunter</h3>
                             <h5 className='text-[#c9baba] font-extrabold tracking-widest  ' >Action, Fantasy</h5>
                             <div className='flex w-auto gap-5 font-extrabold flex-row justify-start items-center ' >
-                                <button className='md:w-[35%] w-[50%] p-2 bg-[#047e9c] rounded-sm ' >Watch Now</button>
-                                <button className='md:w-[10%] w-[15%] p-2 border-2 text-white border-white bg-[#615c5c3f] text-[15px] rounded-sm ' >+</button>
+                                <button className='md:w-[22.5%] w-[50%] p-2 bg-[#e09b07] rounded-sm ' >Watch Now</button>
+                                <button className='md:w-[4%] w-[15%] p-2 border-2 text-white border-white bg-[#615c5c3f] text-[15px] rounded-sm ' >+</button>
                             </div>
                         </div>
                     </div>

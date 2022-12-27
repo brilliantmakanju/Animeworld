@@ -22,16 +22,19 @@ export default function MyApp({ Component, pageProps }) {
       <SNav />
       <div className="w-full  text-[#9FD8CB] overflow-x-hidden overflow-y-scroll h-screen flex flex-col md:px-5 px-1 ">
         {/* <TNav /> */}
-        <div className=" flex justify-between items-center py-2 px-2  " >
+        <div className=" flex justify-between items-center py-2 px-2 " >
           <div className="md:flex hidden font-extrabold flex-row items-center justify-start md:gap-10 gap-5 " >
             <p>Movie</p>
             <p>Series</p>
             <p>Tv Show</p>
           </div>
+          <form className=" lg:mr-[2.5em] md:mr-[-1.3em] bg-[#615f5c] w-[17em] hidden md:flex items-center justify-end flex-col mb-2 py-2 rounded-2xl " >
+            <input type="search" placeholder="Search" className="px-3 pr-8  w-full duration-300 text-white  bg-transparent  rounded-t-md " />
+          </form>
           <div className="md:hidden" >
             <h2 className="text-[20px]" >Anime Vanguard</h2>
           </div>
-          <div className="flex md:hidden font-extrabold flex-row items-center justify-start md:gap-10 gap-5" >
+          <div className="flex md:hidden  font-extrabold flex-row items-center justify-end md:gap-10 gap-5" >
             <p>S</p>
             <p>P</p>
             <p>H</p>

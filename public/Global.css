@@ -18,11 +18,11 @@ html{
 
 @layer base{
     body{
-        @apply  tracking-widest bg-[#ffffff] text-[#0D1B2A]
+        @apply  tracking-widest bg-[#222121] text-[#e6a226]
     }
 
     h1, h2, h3, h4, h5, h6{
-        @apply font-bold text-[#0D1B2A]
+        @apply font-bold text-[#e6a226]
     }
 
     h1{
@@ -46,7 +46,7 @@ html{
     } */
 
     p, span, div{
-        @apply text-[#0D1B2A]
+        @apply text-[rgb(255,255,255)]
     }
 }
 
