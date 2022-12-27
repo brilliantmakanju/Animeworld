@@ -20,7 +20,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <div className=" flex md:flex-row md:justify-between  " >
       <SNav />
-      <div className="w-full  text-[#9FD8CB] overflow-x-hidden overflow-y-scroll h-screen flex flex-col md:px-5 px-1 ">
+      <div className="w-full  text-[#9FD8CB] overflow-x-hidden h-auto md:overflow-y-scroll md:h-screen flex flex-col md:px-5 px-1 ">
         {/* <TNav /> */}
         <div className=" flex justify-between items-center py-2 px-2 " >
           <div className="md:flex hidden font-extrabold flex-row items-center justify-start md:gap-10 gap-5 " >
