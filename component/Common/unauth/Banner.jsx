@@ -45,16 +45,16 @@ const Banner = () => {
             <motion.div
                 // id='slideCont'
                 id='carouselDarkVariant'
-                className="carousel slide carousel-fade carousel-dark  relative h-auto md:h-auto w-[97vw] flex flex-row justify-around md:w-full items-center   gap-10 overflow-scroll bannerSlide  "
+                className="carousel slide carousel-fade carousel-dark  relative h-[50vh] md:h-[70vh] w-[97vw] flex flex-row justify-around md:w-[85vw] items-center   gap-10 overflow-scroll bannerSlide  "
                 data-bs-ride="carousel"
                 initial={{ x: "-100vw" }}
                 animate={{ x: 0 }}
                 transition={{ type: "spring", duration: 1, bounce: 0.3 }}
             >
 
-                <div className="carousel-inner bannerSlide h-[40vh] md:h-[55vh] relative w-screen overflow-x-scroll overflow-y-scroll " id='bannerScroll' style={{ scrollBehavior: "smooth" }} >
-                    <div className='absolute left-0 h-full w-full rounded-l-md z-[10] bg-gradient-to-r from-[#0f0e0ed0] to-[#08080852] ' ></div>
-                    <div className="carousel-item active relative float-left h-[40vh] md:h-[55vh]  w-full " >
+                <div className="carousel-inner bannerSlide h-[50vh] md:h-[70vh] relative w-[97vw] overflow-x-scroll overflow-y-scroll " id='bannerScroll' style={{ scrollBehavior: "smooth" }} >
+                    <div className='absolute left-0 w-full h-full rounded-l-md z-[10] bg-gradient-to-r from-[#0f0e0ed0] to-[#08080852] ' ></div>
+                    <div className="carousel-item active relative float-left h-[50vh] md:h-[70vh]  w-full " >
                         <Image
                             fill
                             src="/projects/banner-11.jpg"
